@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>Index</h1>
+
+
+{%  if result == 0 %}
+<h3>{{ name }}</h3>
+{% endif %}
+
+{%  if result != 0 %}
+<h1>Login failed!</h1>
+<p><a href="/">Try again</a></p>
+{% endif %}
+</form>
+</body>
+</html>
+
