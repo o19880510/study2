@@ -5,14 +5,10 @@
 
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/my_database');
+mongoose.connect('mongodb://localhost/myapp');
 
-var Schema = mongoose.Schema,
-    ObjectId = Schema.ObjectId;
+var MyModel = mongoose.model('TestModel', new Schema({ name: String }));
 
-var BlogPost = new Schema({
-    author    : ObjectId,
-    title     : String,
-    body      : String,
-    date      : Date
-});
+MyModel.find(function (err, results) {
+
+})
