@@ -7,6 +7,7 @@ var Schema = mongoose.Schema;
 
 var TestSchema = new Schema({
     name: String,
+    modifyDate: { type: Date, default: Date.now },
     createDate: { type: Date, default: Date.now },
 });
 
