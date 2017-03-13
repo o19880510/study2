@@ -34,6 +34,12 @@ results.then(function (data) {
     console.log("111="+data)
 })
 
+async function find() {
+    results2 = await test.find2({"_id": "58becc4d3f4b52221c6c259d"})
+    console.log("await="+results2)
+}
+find()
+
 TestModel.find1({}, function (err, results) {
     console.log(results)
 })
